@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="paginaMaestra.Master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    
+    <div>
+        <form id="form1" runat="server">
+        <img src="imagenes/portadaEmpresaNaviera.jpg" />
+        <asp:Menu ID="Menu1" runat="server" OnMenuItemClick="Menu1_MenuItemClick">
+            <Items>
+                <asp:MenuItem NavigateUrl ="~/Alta Mecanico.aspx" Text="Alta Mecanico" Value="Alta Mecanico"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AltaEmbarcacion.aspx" Text="Alta Embarcacion" Value="AltaEmbarcacion"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AltaReparacion.aspx" Text="Alta Reparacion" Value="AltaReparacion"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AgregarMaterial.aspx" Text="Asignacion de Materiales " Value="AltaMateriales"></asp:MenuItem>
+                 <asp:MenuItem NavigateUrl="~/AltaMaterialNacional.aspx" Text="Alta Material Nacional " Value="AltaMaterialNacional"></asp:MenuItem>
+                 <asp:MenuItem NavigateUrl="~/AltaMaterialImportado.aspx" Text="Alta Material Importado " Value="AltaMaterialeImportado"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AgregarMecanico.aspx" Text="Asignacion Mecanico" Value="IngresoMecanicoRep"></asp:MenuItem>
+                 <asp:MenuItem NavigateUrl="~/ModificarMecanico.aspx" Text="Modificar Mecanico " Value="ModificarMecanico"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
